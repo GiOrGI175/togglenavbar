@@ -12,6 +12,7 @@
   --mb_nav_white: #fffcf8;
   --gray: #808397;
   --yelow: #fbd600;
+  --yelow2: #fad400;
 }
 
 /*  */
@@ -105,7 +106,142 @@ nav ul button {
 
 /* header end */
 
+/*  */
+
+/* section 1 start */
+
+.section_1 {
+  max-width: 1440px;
+  display: flex;
+}
+
+.textContant_box {
+  width: 720px;
+  height: 600px;
+  display: flex;
+  justify-content: end;
+}
+
+.textContant {
+  width: 445px;
+  height: 285px;
+  margin: 158px 102px 0px 0px;
+}
+
+.textContant h1 {
+  width: 445px;
+  height: 98px;
+  margin-bottom: 40px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.29px;
+  color: var(--black);
+}
+
+.textContant p {
+  width: 445px;
+  height: 90px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.13px;
+  color: var(--gray);
+}
+
+.span_box {
+  width: 137px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.textContant .span_box span {
+  width: 120px;
+  height: 25px;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: var(--black);
+  text-align: center;
+}
+
+.span_box .underline {
+  width: 137px;
+  height: 10px;
+  border-radius: 28px;
+  opacity: 25%;
+  position: relative;
+  top: -10px;
+  background-color: var(--yelow2);
+}
+
+.section_1_foto {
+  max-width: 720px;
+  height: 600px;
+}
+
+.section_1_foto img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  /* height: 600px; */
+  background-position: center;
+}
+
+/*  section 1 end */
+
+/*  */
+
 /* responsive start */
+
+/* tablet responsive start */
+
+@media screen and (max-width: 1025px) {
+  /* section_1 start */
+
+  .textContant_box {
+    justify-content: center;
+  }
+
+  .textContant {
+    width: 327px;
+    height: 309px;
+    margin: 158px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContant h1 {
+    width: 327px;
+    height: 78px;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: -0.23px;
+    text-align: center;
+  }
+
+  .textContant p {
+    width: 327px;
+    height: 150px;
+    text-align: center;
+  }
+
+  /* section_1 end */
+}
+
+/* tablet responsive end */
+
+/*  */
+
+/* mobile responsive start */
 
 @media screen and (max-width: 755px) {
   /* main page start */
@@ -207,12 +343,6 @@ nav ul button {
     background-color: var(--yelow);
   }
 
-  /* section 1 header respnsive start */
-
-  /*  */
-
-  /*  section1 content strat*/
-
   .header_background > h1 {
     width: 327px;
     height: 98px;
@@ -223,7 +353,48 @@ nav ul button {
     letter-spacing: 6.25px;
   }
 
-  /*  section1 content end*/
+  /* section 1 header respnsive start */
+
+  /*  */
+
+  /*  section1  strat*/
+
+  .section_1 {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .section_1_foto {
+    max-width: 720px;
+    height: 312px;
+  }
+
+  .section_1_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+  }
+
+  .textContant_box {
+    max-width: 375px;
+    height: 437px;
+    justify-content: center;
+  }
+
+  .textContant {
+    max-width: 327px;
+    height: 309px;
+    margin: 64px 0px 0px 0px;
+  }
+
+  /*  section1 end*/
+
+  /*  */
 }
+
+/* mobile responsive end */
 
 /* responsive end */
