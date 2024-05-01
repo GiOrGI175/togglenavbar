@@ -375,7 +375,6 @@ nav ul button {
 
 .section_4_box .flex_row_box {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .section_4_box {
@@ -518,6 +517,8 @@ nav ul button {
   /* section_2 end */
 
   /*  */
+
+  /* section_4 start */
 }
 
 /* tablet responsive end */
@@ -723,6 +724,8 @@ nav ul button {
     flex-direction: column;
     align-items: center;
   }
+
+  /*  /*  section3 end */
 
   /*  /*  section3 end */
 }
