@@ -23,6 +23,12 @@
   --green4: #458d7e;
   --blue: #052c3b;
   --blue_2: #19536c;
+  --backgroundcolor_1: #49bcf1;
+  --backgroundcolor_2: #f8d900;
+  --backgroundcolor_3: #fe6f61;
+  --backgroundcolor_4: #fe6f61;
+  --background1: #92e1d3;
+  --background2: #63c9fc;
 }
 
 /*  */
@@ -36,9 +42,52 @@ body {
   max-width: 1440px;
   height: fit-content;
   margin: 0 auto;
-  /*  */
-  border: 2px solid black;
-  /*  */
+}
+
+.backgroundcolor_1 {
+  background-color: var(--backgroundcolor_1);
+  width: 100%;
+}
+
+.backgroundcolor_2 {
+  background-color: var(--backgroundcolor_2);
+  width: 100%;
+}
+
+.background_section3 {
+  background-color: var(--backgroundcolor_3);
+  width: 100%;
+}
+
+.background_section4 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.background1 {
+  flex: 1;
+  width: 100%;
+  background-color: var(--background1);
+}
+.background2 {
+  flex: 1;
+  width: 100%;
+  background-color: var(--background2);
+}
+.background_section5 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.background1-1 {
+  flex: 1;
+  width: 100%;
+  background-color: var(--background2);
+}
+.background2-1 {
+  flex: 1;
+  width: 100%;
+  background-color: var(--backgroundcolor_3);
 }
 
 .header_background {
@@ -130,6 +179,7 @@ nav ul button {
   height: 600px;
   display: flex;
   justify-content: end;
+  background-color: var(--white);
 }
 
 .textContant {
@@ -444,20 +494,15 @@ nav ul button {
 
 /*  */
 
-/*  */
+/* section_5 start */
 
-/*  footer start */
-
-.footer_imgs {
-  /*  */
-  border: 2px solid violet;
-  /*  */
-  height: 447px;
-  margin-top: 160px;
+.section_5 {
+  max-width: 1440px;
+  height: fit-content;
   display: flex;
 }
 
-.footer_imgs .foto {
+.section_5 .foto {
   max-width: 360px;
   height: 447px;
 }
@@ -468,6 +513,12 @@ nav ul button {
   object-fit: cover;
   background-position: center;
 }
+
+/* section_5 end */
+
+/*  */
+
+/*  footer start */
 
 .footer_box {
   max-width: 100%;
@@ -613,9 +664,6 @@ nav ul button {
     height: fit-content;
     margin: 0 auto;
     overflow: hidden;
-    /*  */
-    border: 2px solid black;
-    /*  */
   }
 
   /* main page end */
@@ -823,6 +871,22 @@ nav ul button {
   }
 
   /* section_4 end */
+
+  /*  */
+  /* section_5 stat */
+
+  .foto {
+    display: none;
+  }
+
+  .section_5 {
+    width: 375px;
+    height: 375px;
+    background-image: url(../img/section_5_background.png);
+  }
+
+  /* section_5 end */
+  /*  */
 }
 
 /* mobile responsive end */
