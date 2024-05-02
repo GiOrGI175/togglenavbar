@@ -595,7 +595,7 @@ header .header {
   list-style: none;
 }
 
-.footer_nav .nav_social ul li img:hover {
+.footer_nav .nav_social ul li img {
   transition-property: all;
   transition-duration: 1s;
   transition-delay: 0.1s;
