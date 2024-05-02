@@ -15,6 +15,7 @@
   --gray2: #5b636d;
   --gray3: #a7aaad;
   --yelow: #fbd600;
+  --yelow_hover: #fad400;
   --yelow2: #fad400;
   --red: #fe7766;
   --green: #24554a;
@@ -130,19 +131,27 @@ header .header {
   color: var(--white);
 }
 
-nav ul button {
+.li_background {
   width: 140px;
   height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 28px;
   background-color: var(--white);
-  border: none;
   font-family: 'Fraunces', serif;
-}
-.btn_a {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: var(--black) !important;
+  color: var(--black);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.li_background:hover {
+  background-color: #91cfec;
+  color: #ffffff;
 }
 
 .burger_btn {
@@ -218,9 +227,10 @@ nav ul button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
-.textContant .span_box span {
+.section_1 .textContant .span_box span {
   width: 120px;
   height: 25px;
   font-family: 'Fraunces', serif;
@@ -240,6 +250,15 @@ nav ul button {
   position: relative;
   top: -10px;
   background-color: var(--yelow2);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.span_box .underline:hover {
+  top: -8px;
+  background-color: var(--yelow2);
+  opacity: 99%;
 }
 
 .section_1_foto {
@@ -331,6 +350,11 @@ nav ul button {
   position: relative;
   top: -10px;
   background-color: var(--red);
+}
+.section_2 .span_box .underline:hover {
+  top: -8px;
+  background-color: var(--red);
+  opacity: 99%;
 }
 
 .section_2_foto {
@@ -471,7 +495,7 @@ nav ul button {
   margin-top: 69px;
 }
 
-.span_box :first-child {
+.section_4_box .span_box :first-child {
   font-family: 'Fraunces', serif;
   font-size: 18px;
   font-weight: 900;
@@ -481,7 +505,7 @@ nav ul button {
   color: var(--black2);
 }
 
-.span_box :last-child {
+.section_4_box .span_box :last-child {
   width: 203px;
   font-weight: 600;
   font-size: 14px;
@@ -552,6 +576,13 @@ nav ul button {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.13px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.footer_nav .nav_page ul li a:hover {
+  color: var(--white);
 }
 
 .footer_nav .nav_social ul {
@@ -562,6 +593,18 @@ nav ul button {
 }
 .footer_nav .nav_social ul li {
   list-style: none;
+}
+
+.footer_nav .nav_social ul li img:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+
+.footer_nav .nav_social ul li img:hover {
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* footer end */
