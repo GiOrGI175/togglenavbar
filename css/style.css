@@ -659,6 +659,13 @@ nav ul button {
 @media screen and (max-width: 755px) {
   /* main page start */
 
+  .main_page_header {
+    max-width: 1440px !important;
+    height: fit-content !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
   .main_page {
     max-width: 375px;
     height: fit-content;
@@ -673,7 +680,7 @@ nav ul button {
   /* header respnsive start */
 
   .header_background > header {
-    max-width: 375px;
+    max-width: 1440px;
     margin: 0 auto;
     padding-top: 34px;
     margin: 0px 24px;
@@ -682,6 +689,7 @@ nav ul button {
   .header_background {
     background-image: url(../img/background_header-mobile.png);
     height: 538px;
+    background-repeat: no-repeat;
   }
 
   .logo {
@@ -886,6 +894,37 @@ nav ul button {
   }
 
   /* section_5 end */
+
+  .background1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background1_responsive {
+    flex: 1;
+    /* background-color: violet; */
+  }
+
+  .background1_responsive2 {
+    flex: 1;
+    background-color: var(--background2);
+  }
+
+  .background2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background2_responsive {
+    flex: 1;
+    background-color: var(--background1);
+  }
+
+  .background2_responsive2 {
+    flex: 1;
+    /* background-color: var(--background2); */
+  }
+
   /*  */
 }
 
